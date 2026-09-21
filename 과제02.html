@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>권지현</title>
+    <link rel="stylesheet" href="과제02.css">
+    <script defer src="./과제02.js"></script>
+</head>
+<body>
+    <h1>야구 직관 기록 다이어리</h1>
+    <form id="recordForm">
+            <label for="gameData">경기 날짜:</label>
+            <input type="date" id="gameData" title="경기날짜" required>
+    
+            <div class="matchup">
+                <div class="team-field">
+                    <label for="away">원정팀:</label>
+                    <select id="away">
+                        <option value="KT">KT</option>
+                        <option value="삼성">삼성</option>
+                        <option value="LG">LG</option>
+                        <option value="KIA">KIA</option>
+                        <option value="두산">두산</option>
+                        <option value="NC">NC</option>
+                        <option value="SSG">SSG</option>
+                        <option value="롯데">롯데</option>
+                        <option value="한화">한화</option>
+                        <option value="키움">키움</option>
+                    </select>
+                    <input type="number" id="awayscore" placeholder="스코어" required>
+                </div>
+    
+                <span class="vs">vs</span>
+    
+                <div class="team-field">
+                    <label for="home">홈팀:</label>
+                    <select id="home">
+                        <option value="KT">KT</option>
+                        <option value="삼성">삼성</option>
+                        <option value="LG">LG</option>
+                        <option value="KIA">KIA</option>
+                        <option value="두산">두산</option>
+                        <option value="NC">NC</option>
+                        <option value="SSG">SSG</option>
+                        <option value="롯데">롯데</option>
+                        <option value="한화">한화</option>
+                        <option value="키움">키움</option>
+                    </select>
+                    <input type="number" id="homescore" placeholder="스코어" required>
+                </div>
+            </div>
+    
+            <label for="note">메모:</label>
+            <input type="text" id="note" placeholder="그날 기억에 남는 한줄">
+    
+            <button type="submit">추가</button>
+        </form>
+    
+        <ul id="recordList"></ul>
+
+</body>
+</html>
